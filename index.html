@@ -1,12 +1,395 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<!DOCTYPE html><!--reason eka thamai browser ekata meka html doc ekak kiyala kiyanna thamai meka danne doctype eka kiyanna-->
+<html lang="en"><!--"starting tag eka"thawa namak thamai root element eka  eka thamai html tag eka-->
+
+<!--elements ekak-->
+<head><!--extra information supply karanawa-->
+    <meta charset="UTF-8"> <!--"meta data"  meke thinne mona character set ekakda kiyala pennananwa -->
+    <meta name="description" content="this is the decription"><!--web site ek search karana apata penna description ekak danna puluwan-->
+    <meta name="keywords" content="java,html,css,react"><!--search karana kattiyata meka suggestion wenna keyword use karanawa-->
+    <meta name="author" content="ijse"><!--web site eka hadapu kena aithi kena-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--pena area eka scale eka thiyenna ona pramanaya -->
+    <link rel="icon" type="image/x-icon" href="assets/8673087_3949019-removebg-preview.png"><!--ape web site eka hadaddi pena udin pena icon eka "favicon eka kiyala kiyanawa"-->
+    <title>Home - DILMI</title><!--api dana nama penwanawa-->
 </head>
-<body>
+
+<!--elements ekak-->
+<body><!--meke athule liyana ewa thamai apata web page eka athule pennanne body tag eka athule-->
     <h1>IJSE - Institute of Software Engineering</h1>
     <h2>#1 Software Engineering Institute in Sri Lanka</h2>
-    <h2>Dilmi</h2>
+    <h3>Dilmi</h3>
+    <h4>Dilmi</h4>
+    <h5>Dilmi</h5>
+    <h6>Dilmi</h6>
+    <p>Welcome To IJSE</p><!--paragraph-->
+    <p>Welcome To <em>IJSE</em></p> <!--nesting elements-->
+    <em>WelcomeTo</em><em>IJSE</em><!--inline elements-->
+    <p>Welcome </p><p>To IJSE</p><!--bolck level elements-->
+    <p>
+        <strong>It's</strong> hard for me to match the color <span>so</span> please give me an idea about the color and how to match the color
+    </p>
+    <p>
+        <!--i tags eken italic--><!--b tags eken bold wenw,u tag eken underline wenw,mark eken highlight wenawa-->
+        <i>Lorem</i> ipsum <b>dolor</b>  sit amet, <u>consectetur</u>  adipisicing elit. <mark>Accusamus</mark>  aliquam commodi consectetur, dignissimos ea est et eum ex libero numquam officia porro, quisquam ratione reiciendis rem reprehenderit rerum similique unde!
+    </p>
+    <h2>X<sup>2</sup> </h2><!--2 udin print wenawa-->
+    <h2>H<sub>2</sub>O</h2><!--2 yatin print wenawa-->
+    <address>39D,ABC,rod,panadura</address><!--address ekak print karanna use karanawa-->
+    <p>
+        hello,
+        welcome to ijse.
+    </p>
+    <pre><!--api contect ek dena vidihatama thamai print karanne eyatama special front ekak thinwa-->
+         hello,
+         welcome to ijse
+    </pre>
+    <pre>
+        <code><!--code ekak hariyata liyana akaraya tabs thiyana vidiha ehema pennala hariyata codev ek pennanna use karanawa-->
+            function(){
+                console.log("hello");
+            }
+        </code>
+    </pre>
+    <center>Hello</center><!--develop walata use karanna epa-->
+    <marquee>Dilmi</marquee><!--develop walata use karanna epa dn use karanne nh-->
+
+<!--table ekak create karala data dana vidiha-->
+    <table border="1" width="400" bgcolor="#dcdcdc"><!--border- wate line create kara ganna puluwan table ekak vidihata , width-row ekak athara paratharaya wadi karanawa -->
+        <thead><!--header ekata name danawa adala tika-->
+        <caption> <b>Student Table</b> </caption><!--a table eka mokakda kiyala kiyanna puluwan-->
+        <th>ID</th>
+        <th> NAME</th>
+        <th colspan="2">EMAIL</th><!--column dekak ekathu karanawa-->
+        <th>PARENT'S NAME</th>
+        </thead>
+
+        <tbody><!--table eka athule thina data tika input karanne mehema-->
+        <tr>
+            <td>1</td>
+            <td>Kavidu</td>
+            <td>Kavidhu1@gmail.com</td>
+            <td>Kavidhu2@gmail.com</td>
+            <td>Mr.Rathnayaka</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Janith</td>
+            <td>Janith1@gmail.com</td>
+            <td>Janith2@gmail.com</td>
+            <td>Mr.Sarath</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sheron</td>
+            <td colspan="2">sheron@gmail.com</td>
+            <td rowspan="2">Mr.Kamal</td><!--row dekak ekathu karanawa-->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Brian</td>
+            <td>brian1@gmail.com</td>
+            <td>brian2@gmail.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Vishwa</td>
+            <td>vishwa1@gmail.com</td>
+            <td>vishwa2@gmail.com</td>
+            <td>Mr.Nihal</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Saroja</td>
+            <td colspan="2" rowspan="2">saroja@gmail.com</td>
+            <td rowspan="2">Mr.Nelson</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sarojani</td>
+        </tr>
+        </tbody>
+    </table>
+    <img src="assets/8673087_3949019-removebg-preview.png"  alt="logo"><!--void elements-->
+
+<!--image-->
+    <img src="assets/images/large.jpg" title="Apple iphone" alt="Iphone 14 pro" width="400">
+<!--picture-->
+    <picture>
+        <source media="(min-width: 1000px)" srcset="assets/images/large.jpg">
+        <source media="(min-width: 800px)" srcset="assets/images/medium.jpg">
+        <img src="assets/images/small.jpg" title="iphone small" alt="iphone 14 small">
+    </picture>
+    <br>
+<!--video-->
+    <video
+           muted
+           autoplay
+           controls
+           loop
+           poster="assets/images/carimage.jpg"
+           width="700"
+           height="400">
+        <source src="assets/videos/car.mp4" type="video/mp4">
+        <source src="assets/videos/car.webm" type="video/webm">
+        <!--track-->
+        <track label="english" kind="subtitles" src="assets/videos/subtitles/sample.vtt" srclang="en">
+        <track label="arabic" kind="subtitles" src="assets/videos/subtitles/arabic.vtt">
+    </video>
+    <br>
+<!--audio-->
+    <audio controls>
+        <source src="assets/audios/audio_file1.mp3" type="audio/mp3">
+    </audio>
+
+    <form>
+        <input type="text">
+        <br>
+        <br>
+        <input type="password">
+        <br>
+        <br>
+        <input type="email">
+        <br>
+        <br>
+        <input type="button" value="Click">
+        <br>
+        <br>
+        <!--katuwak enne select karanna-->
+        <input type="checkbox" >
+        <br>
+        <br>
+        <!--raumak enne select kranna-->
+        <input type="radio" >
+        <br>
+        <br>
+        <!--color eka daganna puluwan-->
+        <input type="color" >
+        <br>
+        <br>
+        <!--date eka danna puluwan-->
+        <input type="date" >
+        <br>
+        <br>
+        <!--date ekath ekka time eka danna puluwan-->
+        <input type="datetime-local" >
+        <br>
+        <br>
+        <!--dawas limite karanna puluwan-->
+        <input type="date" max="2024-07-15">
+        <br>
+        <br>
+        <!--month ekak choose karnawa-->
+        <input type="month" >
+        <br>
+        <br>
+        <!--week ekak choose karnawa-->
+        <input type="week" >
+        <br>
+        <br>
+        <!--time ekak choose karnawa-->
+        <input type="time" >
+        <br>
+        <br>
+        <!--number input karanawa-->
+        <input type="number" >
+        <br>
+        <br>
+        <!--search input karanawa-->
+        <input type="search" >
+        <br>
+        <br>
+        <!--url input karanawa-->
+        <input type="url" >
+        <br>
+        <br>
+        <!--tel input karanawa-->
+        <input type="tel" >
+        <br>
+        <br>
+        <!--range eka-->
+        <input type="range" >
+        <br>
+        <br>
+        <!--file ekak upload karanna puluwan file ekak select karala-->
+        <input type="file" >
+        <br>
+        <br>
+        <!--image ekak danna puluwan-->
+        <input type="image" src="assets/images/small.jpg" >
+        <br>
+        <br>
+        <!--hide wela thinne -->
+        <input type="hidden" >
+        <br>
+        <br>
+        <!--btn-->
+        <input type="button" value="button">
+        <!--sampurna form ekama clear karala denawa-->
+        <input type="reset" value="reset">
+        <!--refresh wenawa-->
+        <input type="submit" value="submit">
+        <br>
+        <br>
+<!--                &lt;!&ndash;Label&ndash;&gt;-->
+<!--        &lt;!&ndash;placeholder eken kotuwe athule penawa a dena eka lawata &ndash;&gt;-->
+<!--        <label  for="first name">First Name</label> <br>-->
+<!--        <input type="text" id="first name" placeholder="Enter your first name"> <br>-->
+
+<!--        <label  for="last name">Last Name</label> <br>-->
+<!--        <input type="text" id="last name" placeholder="enter your last name"> <br>-->
+<!--        <br>-->
+
+<!--        <br>-->
+<!--        <br>-->
+<!--        &lt;!&ndash;message aria&ndash;&gt;-->
+<!--        <label for="message">Message</label> <br>-->
+<!--        <textarea-->
+<!--                placeholder="Enter your message"-->
+<!--                id="message"-->
+<!--                rows="10"-->
+<!--                cols="100"-->
+<!--        ></textarea>-->
+<!--        <br><br>-->
+
+<!--        <label for="program">Program</label>-->
+<!--        <select id="program">-->
+<!--            <option value="p1">Select your program</option>-->
+<!--            <option value="p2">Java EE</option>-->
+<!--            <option value="p3">Spring boot</option>-->
+<!--            <option value="p4">NodeJs</option>-->
+<!--            <option value="p5">GO</option>-->
+<!--            <option value="p6">Perl</option>-->
+<!--        </select>-->
+    </form>
+
+    <hr>
+    <form action="test.html" method="post">
+        <h2>Student Form</h2>
+        <!--Label-->
+        <!--placeholder eken kotuwe athule penawa a dena eka lawata -->
+        <!--Api hadana text field walata name ekak dennama ona mokeda kiyal adala eka subbmit kara ganna  -->
+        <label  for="first name">First Name</label> <br>
+        <input type="text" id="first name" placeholder="Enter your first name" name="first"> <br>
+
+        <label  for="last name">Last Name</label> <br>
+        <input type="text" id="last name" placeholder="enter your last name" name="last"> <br>
+        <br>
+
+        <br>
+        <br>
+        <!--message aria-->
+        <label for="message">Message</label> <br>
+        <textarea
+                placeholder="Enter your message"
+                id="message"
+                rows="10"
+                cols="100"
+        ></textarea>
+        <br><br>
+
+        <label for="program">Program</label>
+        <select id="program" name="program">
+        <!--option group walin wenne group karala danna puluwan select karana ewa-->
+            <optgroup label="backEnd tech">
+                <option value="p1">Select your program</option>
+                <option value="p2">Java EE</option>
+                <option value="p3">Spring boot</option>
+                <option value="p4">NodeJs</option>
+                <option value="p5">GO</option>
+                <option value="p6">Perl</option>
+            </optgroup>
+
+            <optgroup label="frontend tech">
+                <option value="p7">Java SE</option>
+                <option value="p8">HTML & CSS</option>
+                <option value="p9">Angular</option>
+                <option value="p10">ReactJS</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <fieldset>
+            <legend>select payment</legend>
+            <input id="payment" type="radio" name="radio" value="one-time-pay"><label for="payment">One Time Payment</label> <br>
+            <input id="payment2" type="radio" name="radio" value="monthly-pay"><label for="payment">Monthly Payment</label>
+        </fieldset>
+        <br><br>
+
+        <input type="text" list="detalist" name="developer">
+        <datalist id="detalist">
+            <option value="frontend-developer">FrontEnd developer</option>
+            <option value="backend-developer">BackEnd developer</option>
+            <option value="uiux">UI UX</option>
+            <option value="qa">QA</option>
+            <option value="ba">BA</option>
+        </datalist>
+        <!--
+            button
+            submit
+            reset
+        -->
+        <br>
+        <br>
+        <button type="button">Click</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <form oninput="result.value=parseInt(number1.value)+parseInt(number2.value)">
+        <input type="range" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <output name="result" for="number1 number2">0</output>
+    </form>
+
+        <!--ordered List-->
+<!--ol orderedList-->
+        <ol type="1">
+            <li>Java</li>
+            <li>Python</li>
+            <li>GO</li>
+            <li>C++</li>
+        </ol>
+
+
+        <!--ul orderList-->
+        <ul type="disk">
+            <li>Java</li>
+            <li>Python</li>
+            <li>Go</li>
+            <li>C++</li>
+        </ul>
+<!--  description data thinne  -->
+        <dl>
+            <dt>Asia</dt>
+            <dd>Sri Lanka</dd>
+            <dd>India</dd>
+
+            <dt>Europe</dt>
+            <dd>Italy</dd>
+            <dd>Japan</dd>
+            <dd>Korea</dd>
+        </dl>
+<br><br>
+<ol type="1">
+    <li>Java</li>
+    <li>Python</li>
+    <li>Perl</li>
+    <li>C++</li>
+    <li>Internet technology</li>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <ul>
+            <li>Core Java</li>
+            <li>JQuery</li>
+            <li>React</li>
+            <li>Vue</li>
+        </ul>
+        <li>UI/UX</li>
+    </ol>
+</ol>
+
+
 </body>
-</html>
+
+</html><!--closing tag eka-->
